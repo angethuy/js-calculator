@@ -51,7 +51,7 @@ const schema = {
     },
     operation: {
       description: "Enter the name or symbol for an arithmetic operation",
-      pattern: /add|subtract|multiply|divide|[\+\-\*\%\^\/]/i,
+      pattern: /^(add|subtract|multiply|divide|exponential|mod|\-|\+|\/|\*|\%|\^){1}$/i,
       message: "Invalid input, please enter an operator symbol or string.",
       required: true,
       before: function(value) { return value.trim().toLowerCase() } 
