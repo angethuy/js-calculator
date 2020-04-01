@@ -1,7 +1,7 @@
 const prompt = require('prompt');
 
 // Built off of the Ada curriculum hints for using prompt
-function calculateUserInput(error, promptInput) {
+const calculateUserInput = function(error, promptInput) {
   console.log(`Calculating: ${promptInput.num1} ${promptInput.operation} ${promptInput.num2}`);
 
   switch (promptInput.operation) {
@@ -61,6 +61,5 @@ const schema = {
 
 console.log("Welcome to the Javascript Calculator!");
 prompt.start();
-
 prompt.get(schema, calculateUserInput);
 
