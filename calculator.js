@@ -1,5 +1,6 @@
 const prompt = require('prompt');
 
+// Built off of the Ada curriculum hints for using prompt
 function calculateUserInput(error, promptInput) {
   console.log(`Calculating: ${promptInput.num1} ${promptInput.operation} ${promptInput.num2}`);
 
